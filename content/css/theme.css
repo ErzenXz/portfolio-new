@@ -1,0 +1,122 @@
+ :root {
+
+     --body: #fafbff;
+     --navbar: rgb(243, 247, 253);
+     --navbarblur: rgba(243, 247, 253, 0.5);
+
+     --primary: #f5f8fd;
+     --secondary: #ffffff;
+     --tertiary: #f1f5fe;
+     --google: #f1f1f1;
+
+     --input: #f1f5fe;
+
+     --btn: #a8c7fa;
+     --btn2: #e4eefa;
+     --btn3: #0b57d0;
+
+     --btn-hover: #e0ebfa: --btn-hover2:#0b57d0;
+     --btn-hover3: #e4eefa;
+
+     --text: #041e49;
+     --text2: #96a1b3;
+     --text3: #4f6286;
+
+     --text-sel: #0b57d2;
+
+     --navHoverBlur: rgba(245, 248, 253, 0.7);
+        --navHoverBlur2: rgba(245, 248, 253, 1);
+
+     --border: #e1e5ec;
+     --border2: #b0b9c8;
+
+     --border-nav: #e1e5ec;
+
+
+     --scrollbar: #e1e5ec;
+     --scrollbar-thumb: #b0b9c8;
+     --scrollbar-thumb-hover: #a8c7fa;
+     --scrollbar-track: #f1f5fe;
+
+     --selection: rgba(168, 199, 250, 0.664);
+
+
+     --toast: #777;
+     --toast-color: #e3e6ed;
+     --sidebar-blur: rgba(255, 255, 255, 0.5);
+
+     --gold-light: #f7d154;
+     --gold-dark: #f5c942;
+
+     --silver-light: #c0c0c0;
+     --silver-dark: #a9a9a9;
+
+     --bronze-light: #c59360;
+     --bronze-dark: #a17656;
+
+     --projects-bg:rgba(243, 247, 253, 0.5);
+
+
+ }
+
+ body.dark {
+     --body: #031525;
+     --navbar: #071a2b;
+     --navbarblur: rgba(7, 26, 43, 0.5);
+
+     --primary: #162c46;
+     --secondary: #0d2136;
+     --tertiary: #04182d;
+     --google: #0d2136;
+
+     --input: #223158;
+
+     --btn: #0842a0;
+     --btn2: #10243a;
+     --btn3: #7cacf8;
+
+     --btn-hover: #10263c: --btn-hover2:#aecbfa;
+     --btn-hover3: #233549;
+
+     --text: #d3e3fd;
+     --text2: #93a4bb;
+     --text3: #97a4a7;
+
+     --text-sel: #aecbfa;
+
+     --navHoverBlur: rgba(35, 53, 73, 0.6);
+     --navHoverBlur2: rgba(35, 53, 73, 1);
+
+     --border: #071a2b;
+     --border2: #415366;
+
+     --border-nav: transparent;
+
+
+     --scrollbar: #415366;
+     --scrollbar-thumb: #93a4bb;
+     --scrollbar-thumb-hover: #aecbfa;
+     --scrollbar-track: #0d2136;
+
+     --selection: rgba(50, 66, 116, 0.3);
+
+     --toast: #31374a;
+     --toast-color: #e3e6ed;
+     --sidebar-blur: rgba(20, 24, 36, 0.5);
+
+     --gold-light: #f7d154;
+     --gold-dark: #f5c942;
+
+     --silver-light: #c0c0c0;
+     --silver-dark: #a9a9a9;
+
+     --bronze-light: #c7884a;
+     --bronze-dark: #9e663e;
+
+     --projects-bg: transparent;
+ }
+
+ ::selection {
+     background-color: var(--selection);
+     color: var(--text);
+ }
