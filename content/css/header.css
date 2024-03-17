@@ -1,0 +1,44 @@
+header {
+    background-color: var(--navbarblur);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    backdrop-filter: blur(20px);
+    user-select: none;
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    list-style: none;
+    padding: 1rem 10%;
+    min-height: 4vh;
+    border-bottom: 1px solid var(--border-nav);
+}
+
+header nav li {
+    transition: all 0.3s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+
+header nav li a {
+    border: 1px solid transparent;
+    color: var(--text);
+    text-decoration: none;
+    padding: 0.55rem 1rem;
+    border-radius: 5px;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+
+header nav li a:hover {
+    background-color: var(--navHoverBlur);
+    border: 1px solid var(--border2);
+    box-shadow: 0 0 2px 0 var(--border2);
+}
+
+header nav li:active {
+    transform: scale(0.95);
+}
