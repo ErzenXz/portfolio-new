@@ -1,0 +1,14 @@
+.project {
+    backdrop-filter: blur(100px);
+}
+
+@media screen and (max-width: 768px) {
+    .leftEffect {
+        display: none;
+    }
+
+}
+
+body {
+    transition: background-color 0.3s, color 0.3s;
+}

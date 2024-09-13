@@ -50,12 +50,12 @@
       <link rel="stylesheet" href="./content/css/theme.css" />
       <link rel="stylesheet" href="./content/css/style.css" />
       <link rel="stylesheet" href="./content/css/header.css" />
+      <link rel="stylesheet" href="./content/css/project.css" />
 
       <!-- JavaScript scripts -->
 
       <script defer src="./content/js/theme.js"></script>
       <script defer src="./content/js/app.js"></script>
-      <script defer src="./content/js/index.js"></script>
 
       <!-- Icons -->
 
@@ -76,81 +76,36 @@
             <li><a href="./about.html">About</a></li>
             <li><a href="./contact.html">Contact</a></li>
          </nav>
-         <div className="hamburger ham-closed">
-            <div></div>
-            <div></div>
-            <div></div>
-         </div>
       </header>
-
-      <div id="mobileMenu">
-         <li><a href="index.html">Home</a></li>
-         <li><a href="./projects.html">Projects</a></li>
-         <li><a href="./about.html">About</a></li>
-         <li><a href="./contact.html">Contact</a></li>
-      </div>
 
       <!-- Background Texture -->
 
       <div class="background2"></div>
 
+      <!-- Mobile Navigation -->
+
+      <div class="mobile-nav">
+         <div class="mobile-nav-content">
+            <div class="mobile-nav-header">
+               <h2>Menu</h2>
+               <button id="close-mobile-nav">
+                  <i class="fa-solid fa-xmark"></i>
+               </button>
+            </div>
+            <nav>
+               <li><a href="index.html">Home</a></li>
+               <li><a href="./projects.html">Projects</a></li>
+               <li><a href="./about.html">About</a></li>
+               <li><a href="./contact.html">Contact</a></li>
+            </nav>
+         </div>
+      </div>
+
       <!-- Main Content -->
 
       <main>
-         <section class="intro">
-            <div class="container-intro">
-               <div class="intro-text">
-                  <h1>Hello, I'm Erzen Krasniqi</h1>
-                  <p class="lead">
-                     Envisioning digital landscapes and crafting seamless user experiences is my
-                     passion. As a dedicated web developer, I thrive on transforming innovative
-                     ideas into captivating realities.
-                  </p>
-
-                  <button onclick="openLink(`${location.origin}/contact.html`)">Get Started</button>
-               </div>
-               <div class="intro-image">
-                  <img
-                     src="./content/images/header.webp"
-                     width="300px"
-                     height="auto"
-                     alt="Header image"
-                  />
-               </div>
-            </div>
-         </section>
-
          <div class="about-h">
-            <h2 class="leftEffect">ABOUT ME</h2>
-            <div class="about" id="about">
-               <div class="division">
-                  <p>
-                     With a keen eye for design and a mastery of coding languages, I navigate the
-                     intricate realm of web development with finesse. Before a sticky nav bar
-                     solidifies, I embark on a journey of creativity and precision, ensuring every
-                     pixel and line of code harmonize effortlessly.
-                  </p>
-                  <p>
-                     My commitment to excellence and continuous learning propels me forward in an
-                     ever-evolving digital ecosystem. From frontend aesthetics to backend
-                     functionality, I immerse myself in every facet of web development, delivering
-                     solutions that resonate and inspire.
-                  </p>
-               </div>
-               <p>
-                  Let's collaborate to sculpt digital experiences that captivate, resonate, and
-                  endure.
-               </p>
-            </div>
-         </div>
-         <div class="news-h">
-            <h2>POSTS</h2>
-
-            <div class="news" id="news"></div>
-         </div>
-
-         <div class="projects-h">
-            <h2>PROJECTS</h2>
+            <h2 class="leftEffect">MY PROJECTS</h2>
 
             <div class="projects">
                <div class="project" onclick="openLink('https://quiz.erzen.tk')">
@@ -219,38 +174,6 @@
                      <a href="https://groceries.erzen.tk" class="hidden"></a>
                   </div>
                </div>
-            </div>
-         </div>
-
-         <div class="contact-c">
-            <h2 class="leftEffect">CONTACT ME</h2>
-            <div class="contact">
-               <div class="contact-form">
-                  <form action="https://formspree.io/f/mqkrdado" method="POST" target="_blank">
-                     <div class="form-group">
-                        <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required />
-                     </div>
-                     <div class="form-group">
-                        <label for="email">Email</label>
-                        <input type="email" id="email" name="_replyto" required />
-                     </div>
-                     <div class="form-group">
-                        <label for="message">Message</label>
-                        <textarea id="message" name="message" required></textarea>
-                     </div>
-                     <button type="submit">Send</button>
-                  </form>
-               </div>
-            </div>
-
-            <div class="contact-img">
-               <img
-                  src="./content/images/contact.webp"
-                  width="300px"
-                  height="auto"
-                  alt="Contact image"
-               />
             </div>
          </div>
 
