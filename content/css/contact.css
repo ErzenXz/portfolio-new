@@ -1,0 +1,157 @@
+body {
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.about-h h1 {
+    font-size: 3em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-h p {
+    font-size: 1.5em;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+a {
+    text-decoration: underline;
+    color: var(--text);
+}
+
+
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-group label {
+    width: 100%;
+    font-size: 16px;
+    text-align: left;
+    user-select: none;
+}
+
+.form-group input {
+    padding: 15px 20px;
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    width: 50vw;
+    height: 7vh;
+    background-color: var(--navHoverBlur);
+    color: var(--text);
+    transition: all 0.3s;
+    outline: none;
+}
+
+.form-group input:hover {
+    border: 1px solid var(--border2);
+    background-color: var(--navHoverBlur2);
+}
+
+.form-group input:active {
+    transform: scale(0.95);
+}
+
+.form-group input:focus {
+    border: 1px solid var(--border2);
+}
+
+.form-group textarea {
+    padding: 15px 20px;
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    width: 50vw;
+    height: 20vh;
+    background-color: var(--navHoverBlur);
+    color: var(--text);
+    transition: all 0.3s;
+    outline: none;
+    resize: vertical;
+}
+
+.form-group textarea:hover {
+    border: 1px solid var(--border2);
+    background-color: var(--navHoverBlur2);
+}
+
+.form-group textarea:active {
+    transform: scale(0.95);
+}
+
+.form-group textarea:focus {
+    border: 1px solid var(--border2);
+}
+
+.contact button {
+    background-color: var(--navHoverBlur);
+    color: var(--text);
+    padding: 15px 25px;
+    border: 1px solid var(--border2);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s;
+    width: 50vw;
+    height: 7vh;
+    margin-top: 35px;
+    user-select: none;
+}
+
+.contact button:hover {
+    background-color: var(--navHoverBlur);
+    border: 1px solid var(--border2);
+}
+
+.contact button:active {
+    transform: scale(0.95);
+}
+
+@media screen and (max-width: 768px) {
+    .contact form {
+        margin-top: 20px;
+    }
+
+    .form-group input {
+        width: 70vw;
+    }
+
+    .form-group textarea {
+        width: 70vw;
+    }
+
+    .contact button {
+        width: 70vw;
+    }
+
+    .contact button {
+        margin-top: 20px;
+    }
+
+    .leftEffect {
+        display: none;
+    }
+
+    .about-h h1 {
+        font-size: 2.3em;
+
+    }
+
+    .about-h p {
+        font-size: 1.3em;
+
+    }
+}
