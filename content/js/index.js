@@ -14,7 +14,7 @@ async function parseRSS(url) {
    return json;
 }
 
-parseRSS("https://blog.erzen.tk/feed")
+parseRSS("https://cors.erzen.tk/https://blog.erzen.tk/feed")
    .then((response) => {
       console.log(response);
       let html = [];
