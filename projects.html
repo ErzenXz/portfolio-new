@@ -69,6 +69,8 @@
       src="https://kit.fontawesome.com/f45cd9c28c.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
   </head>
 
   <body class="dark">
@@ -77,34 +79,32 @@
     <header>
       <nav>
         <li><a href="index.html">Home</a></li>
-        <li><a href="./projects.html">Projects</a></li>
+        <li><a class="active" href="./projects.html">Projects</a></li>
         <li><a href="./about.html">About</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </nav>
+
+      <!-- Mobile Navigation Menu -->
+
+      <div class="hamburger ham-closed">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="openedMenu">
+        <nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </nav>
+      </div>
     </header>
 
     <!-- Background Texture -->
 
     <div class="background2"></div>
-
-    <!-- Mobile Navigation
-
-      <div class="mobile-nav">
-         <div class="mobile-nav-content">
-            <div class="mobile-nav-header">
-               <h2>Menu</h2>
-               <button id="close-mobile-nav">
-                  <i class="fa-solid fa-xmark"></i>
-               </button>
-            </div>
-            <nav>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="./projects.html">Projects</a></li>
-               <li><a href="./about.html">About</a></li>
-               <li><a href="./contact.html">Contact</a></li>
-            </nav>
-         </div>
-      </div> -->
 
     <!-- Main Content -->
 
@@ -117,10 +117,9 @@
             <div class="project-text">
               <h3>TapQuiz</h3>
               <p>
-                A quiz app that tests your knowledge on various topics. The app
-                is built with a modern design and is user-friendly. Users can
-                create quizzes and play in real-time with their friends, similar
-                to Kahoot.
+                A fun and engaging quiz app where you can test your knowledge on
+                various topics. Create quizzes and compete with friends in
+                real-time, similar to Kahoot.
               </p>
               <a href="https://quiz.erzen.tk" class="hidden"></a>
             </div>
@@ -129,9 +128,8 @@
             <div class="project-text">
               <h3>Erzen Files</h3>
               <p>
-                A cloud storage app that allows users to store and share files.
-                The app is built with a modern design and is user-friendly.
-                Users can upload, download, and share files with their friends
+                A modern cloud storage app designed for simplicity and ease of
+                use. Upload, download, and share files seamlessly with friends
                 and colleagues.
               </p>
               <a href="https://files.erzen.tk" class="hidden"></a>
@@ -141,10 +139,9 @@
             <div class="project-text">
               <h3>Erzen Chat</h3>
               <p>
-                A chat app that allows users to communicate with their friends
-                and colleagues. The app is built with a modern design and is
-                user-friendly. Users can create groups, send messages, and share
-                files with their friends and colleagues.
+                Stay connected with a sleek and user-friendly chat app. Create
+                groups, send messages, and share files effortlessly with friends
+                or team members.
               </p>
               <a href="https://s.erzenchat.tk" class="hidden"></a>
             </div>
@@ -153,10 +150,8 @@
             <div class="project-text">
               <h3>URL Shortener</h3>
               <p>
-                A URL shortener app that allows users to shorten long URLs. The
-                app is built with a modern design and is user-friendly. Users
-                can create short links and share them with their friends and
-                colleagues.
+                Simplify long URLs with this efficient and straightforward tool.
+                Create short links and share them in just a few clicks.
               </p>
               <a href="https://er-z.tk" class="hidden"></a>
             </div>
@@ -165,10 +160,9 @@
             <div class="project-text">
               <h3>Groceries</h3>
               <p>
-                A groceries app that allows users to create shopping lists. The
-                app is built with a modern design and is user-friendly. Users
-                can create lists, add items, and share them with their friends
-                and colleagues.
+                Plan and organize your shopping with ease. Create detailed
+                grocery lists, add items, and share them with others for better
+                collaboration.
               </p>
               <a href="https://groceries.erzen.tk" class="hidden"></a>
             </div>

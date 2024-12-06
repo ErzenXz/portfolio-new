@@ -173,7 +173,7 @@
       grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
       justify-content: center;
       align-items: center;
-      gap: 3vw;
+      gap: 2vw;
       text-align: justify;
       margin-bottom: 75px;
    }
@@ -189,9 +189,8 @@
       justify-content: center;
       align-items: center;
       background-color: var(--projects-bg);
-      gap: 10px;
-      padding: 10px 20px;
-      border-radius: 16px;
+      padding: 15px 30px;
+      border-radius: 22px;
       transition: all 0.3s;
       border: 1px solid var(--border2);
       height: 250px;
@@ -199,8 +198,14 @@
 
    .project p {
       font-size: 14px;
-      line-height: 1.6;
+      line-height: 1.5;
       margin-bottom: 20px;
+   }
+
+   .project h3 {
+      font-size: 18px;
+      font-weight: 500;
+      margin-bottom: 15px;
    }
 
    .project:hover {
@@ -210,11 +215,6 @@
       cursor: pointer;
    }
 
-
-   .project h3 {
-      font-size: 20px;
-      font-weight: 500;
-   }
 
    .projects-h button {
       background-color: var(--navbarblur);
@@ -837,3 +837,5 @@
       }
 
    }
+
+   

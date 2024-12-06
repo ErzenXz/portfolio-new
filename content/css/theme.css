@@ -2,7 +2,8 @@
 
      --body: #fafbff;
      --navbar: rgb(243, 247, 253);
-     --navbarblur: rgba(243, 247, 253, 0.5);
+     --navbarblur: rgba(243, 247, 253, 0.7);
+     --mobileMenu: #f6f9fe;
 
      --primary: #f5f8fd;
      --secondary: #ffffff;
@@ -55,12 +56,14 @@
      --bronze-dark: #a17656;
 
      --projects-bg: rgba(243, 247, 253, 0.5);
+
  }
 
  body.dark {
      --body: #031525;
      --navbar: #071a2b;
-     --navbarblur: rgba(7, 26, 43, 0.5);
+     --navbarblur: rgba(7, 26, 43, 0.7);
+     --mobileMenu: #08162e;
 
      --primary: #162c46;
      --secondary: #0d2136;

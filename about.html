@@ -59,6 +59,7 @@
       src="https://analytics.erzen.xyz/script.js"
       data-website-id="ea4b987b-4600-417a-9b7a-6e4d43fa16ff"
     ></script>
+
     <script defer src="./content/js/theme.js"></script>
     <script defer src="./content/js/app.js"></script>
 
@@ -69,6 +70,8 @@
       src="https://kit.fontawesome.com/f45cd9c28c.js"
       crossorigin="anonymous"
     ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.x/dist/index.umd.js"></script>
   </head>
 
   <body class="dark">
@@ -78,33 +81,31 @@
       <nav>
         <li><a href="index.html">Home</a></li>
         <li><a href="./projects.html">Projects</a></li>
-        <li><a href="./about.html">About</a></li>
+        <li><a class="active" href="./about.html">About</a></li>
         <li><a href="./contact.html">Contact</a></li>
       </nav>
+
+      <!-- Mobile Navigation Menu -->
+
+      <div class="hamburger ham-closed">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+
+      <div class="openedMenu">
+        <nav>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="./projects.html">Projects</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </nav>
+      </div>
     </header>
 
     <!-- Background Texture -->
 
     <div class="background2"></div>
-
-    <!-- Mobile Navigation -->
-
-    <!-- <div class="mobile-nav">
-         <div class="mobile-nav-content">
-            <div class="mobile-nav-header">
-               <h2>Menu</h2>
-               <button id="close-mobile-nav">
-                  <i class="fa-solid fa-xmark"></i>
-               </button>
-            </div>
-            <nav>
-               <li><a href="index.html">Home</a></li>
-               <li><a href="./projects.html">Projects</a></li>
-               <li><a href="./about.html">About</a></li>
-               <li><a href="./contact.html">Contact</a></li>
-            </nav>
-         </div>
-      </div> -->
 
     <!-- Main Content -->
 
@@ -259,10 +260,6 @@
               touch. I am always looking for new challenges and opportunities to
               create something amazing. Let's build something great together!
             </p>
-          </div>
-
-          <div class="about-image">
-            <img src="./content/images/me.jpg" alt="Erzen Krasniqi" />
           </div>
         </div>
       </div>
