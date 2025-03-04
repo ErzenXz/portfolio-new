@@ -1,5 +1,7 @@
 # 👨‍💻 Erzen Krasniqi's Portfolio Website
 
+> 🚀 A modern, responsive portfolio website showcasing my web development projects, skills, and professional journey. Built with HTML, CSS, and JavaScript.
+
 ## 🌟 Overview
 This is the official repository for my personal portfolio website. This website showcases my skills, projects, and professional experience as a web developer. It serves as a central hub for potential employers, clients, and collaborators to learn more about my work and capabilities.
 
