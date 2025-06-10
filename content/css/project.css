@@ -1,14 +1,292 @@
 .project {
-    backdrop-filter: blur(100px);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+    background: var(--glass-bg);
+    border: 1px solid var(--glass-border);
+    border-radius: 20px;
+    padding: 2rem;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    min-height: 220px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: var(--glass-shadow);
+}
+
+.project::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--gradient-3);
+    opacity: 0;
+    transition: opacity 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: -1;
+}
+
+.project:hover::before {
+    opacity: 0.08;
+}
+
+.project:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+    border-color: var(--border2);
+}
+
+.project:active {
+    transform: translateY(-5px) scale(1.01);
+}
+
+.project-text {
+    z-index: 1;
+}
+
+.project h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    color: var(--text);
+    background: var(--gradient-1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--text2);
+    margin-bottom: 1rem;
+}
+
+/* Special styling for the "+" project card */
+.project:last-child {
+    background: var(--glass-bg);
+    border: 2px dashed var(--border2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.project:last-child h3 {
+    font-size: 3rem;
+    margin: 0;
+    background: var(--gradient-2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.project:last-child:hover {
+    border-color: var(--text-sel);
+    background: var(--navHoverBlur);
+}
+
+/* Project grid layout */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+    padding: 0 1rem;
+}
+
+/* Project categories (if needed) */
+.project[data-category="web"] {
+    border-left: 4px solid #667eea;
+}
+
+.project[data-category="app"] {
+    border-left: 4px solid #f093fb;
+}
+
+.project[data-category="tool"] {
+    border-left: 4px solid #4facfe;
+}
+
+.project[data-category="other"] {
+    border-left: 4px solid #43e97b;
+}
+
+/* Project status indicators */
+.project-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-status.live {
+    background: rgba(16, 185, 129, 0.2);
+    color: #10b981;
+    border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+.project-status.development {
+    background: rgba(245, 158, 11, 0.2);
+    color: #f59e0b;
+    border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.project-status.archived {
+    background: rgba(107, 114, 128, 0.2);
+    color: #6b7280;
+    border: 1px solid rgba(107, 114, 128, 0.3);
+}
+
+/* Project technologies */
+.project-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+
+.project-tech span {
+    background: var(--glass-bg);
+    backdrop-filter: var(--backdrop-blur);
+    -webkit-backdrop-filter: var(--backdrop-blur);
+    border: 1px solid var(--glass-border);
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text2);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-tech span:hover {
+    background: var(--navHoverBlur);
+    transform: translateY(-1px);
 }
 
 @media screen and (max-width: 768px) {
+    .projects {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+        padding: 0 0.5rem;
+    }
+
+    .project {
+        padding: 1.5rem;
+        min-height: 180px;
+    }
+
+    .project h3 {
+        font-size: 1.3rem;
+    }
+
+    .project p {
+        font-size: 0.95rem;
+    }
+
+    .project:last-child h3 {
+        font-size: 2.5rem;
+    }
+
     .leftEffect {
         display: none;
     }
-
 }
 
-body {
-    transition: background-color 0.3s, color 0.3s;
+@media screen and (max-width: 480px) {
+    .projects {
+        padding: 0;
+    }
+
+    .project {
+        padding: 1.25rem;
+        min-height: 160px;
+        margin: 0 0.5rem;
+    }
+
+    .project h3 {
+        font-size: 1.2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .project p {
+        font-size: 0.9rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .project:last-child h3 {
+        font-size: 2rem;
+    }
+
+    .project-tech span {
+        font-size: 0.75rem;
+        padding: 0.2rem 0.6rem;
+    }
+}
+
+/* Animation for projects appearing */
+@keyframes projectAppear {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.project {
+    animation: projectAppear 0.6s ease-out;
+}
+
+.project:nth-child(1) { animation-delay: 0.1s; }
+.project:nth-child(2) { animation-delay: 0.2s; }
+.project:nth-child(3) { animation-delay: 0.3s; }
+.project:nth-child(4) { animation-delay: 0.4s; }
+.project:nth-child(5) { animation-delay: 0.5s; }
+.project:nth-child(6) { animation-delay: 0.6s; }
+
+/* Hover effect for project links */
+.project .hidden {
+    display: none;
+}
+
+/* Loading state for projects */
+.project.loading {
+    opacity: 0.7;
+    pointer-events: none;
+}
+
+.project.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 30px;
+    height: 30px;
+    margin: -15px 0 0 -15px;
+    border: 3px solid var(--border2);
+    border-top: 3px solid var(--text-sel);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Focus styles for accessibility */
+.project:focus-visible {
+    outline: 2px solid var(--text-sel);
+    outline-offset: 4px;
 }
